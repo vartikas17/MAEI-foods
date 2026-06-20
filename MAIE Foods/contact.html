@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact MAIE Foods for orders, bulk inquiries, and customer support." />
+  <title>Contact — MAIE Foods</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍝</text></svg>" />
+</head>
+<body data-maie-layout>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/images/logo.png" alt="MAIE Foods" class="nav__logo-img" /></a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="nav__cta">Shop Now</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg><span class="cart-badge cart-badge--hidden">0</span></a>
+        <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <header class="page-hero page-hero--compact page-hero--with-bg">
+    <div class="page-hero__bg">
+      <img src="assets/images/pasta/all-pasta-2.jpg" alt="" />
+    </div>
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb reveal"><a href="index.html">Home</a> / Contact</nav>
+      <h1 class="page-hero__title reveal reveal-delay-1">Get in Touch</h1>
+      <p class="section__desc reveal reveal-delay-2">Have a question, bulk order inquiry, or just want to say hello? We'd love to hear from you.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <p class="section__eyebrow reveal">Contact Information</p>
+          <h2 class="section__title reveal reveal-delay-1" style="font-size:2.5rem;">Let's Talk Pasta</h2>
+
+          <div class="contact-info__item reveal reveal-delay-2">
+            <div class="contact-info__icon">📍</div>
+            <div>
+              <p class="contact-info__label">Address</p>
+              <p class="contact-info__value">91, Kiratpur Industrial Area<br>Kiratpur, Itarsi District<br>Narmadapuram, PIN 461111<br>Madhya Pradesh, India</p>
+            </div>
+          </div>
+
+          <div class="contact-info__item reveal reveal-delay-2">
+            <div class="contact-info__icon">📞</div>
+            <div>
+              <p class="contact-info__label">Phone</p>
+              <p class="contact-info__value"><a href="tel:+919303327787">+91 93033 27787</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info__item reveal reveal-delay-3">
+            <div class="contact-info__icon">✉️</div>
+            <div>
+              <p class="contact-info__label">Email</p>
+              <p class="contact-info__value">
+                <a href="mailto:info@maiefoods.com">info@maiefoods.com</a><br>
+                <a href="mailto:maiefoods@gmail.com">maiefoods@gmail.com</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-info__item reveal reveal-delay-4">
+            <div class="contact-info__icon">🕐</div>
+            <div>
+              <p class="contact-info__label">Business Hours</p>
+              <p class="contact-info__value">
+                Monday – Friday: 9:00 AM – 6:00 PM<br>
+                Saturday: 9:00 AM – 2:00 PM<br>
+                Sunday &amp; Holidays: Closed
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-2">
+          <h3 style="font-family:var(--font-display); font-size:1.75rem; margin-bottom:1.5rem;">Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="bulk">Bulk Order</option>
+                <option value="distributor">Distributor Partnership</option>
+                <option value="feedback">Product Feedback</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell us how we can help..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center;">Send Message →</button>
+            <div class="form-success">Thank you! Your message has been received. We'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+
+      <div class="map-embed reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.0!2d77.75!3d22.62!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zS2lyYXRwdXIgSW5kdXN0cmlhbCBBcmVhLCBJdGFyc2k!5e0!3m2!1sen!2sin!4v1"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="MAIE Foods location map">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">MAIE <span>FOODS</span></div>
+          <p class="footer__tagline">Premium authentic pasta crafted with care. No Maida. 100% quality ingredients for every kitchen.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__heading">Products</h4>
+          <ul class="footer__links">
+            <li><a href="product-penne.html">Penne</a></li>
+            <li><a href="product-lasagna.html">Lasagna</a></li>
+            <li><a href="product-macaroni.html">Macaroni</a></li>
+          </ul>
+        </div>
+        <div class="footer__contact">
+          <h4 class="footer__heading">Contact</h4>
+          <p>91, Kiratpur Industrial Area<br>Kiratpur, Itarsi — 461111</p>
+          <p><a href="tel:+919303327787">+91 93033 27787</a></p>
+          <p><a href="mailto:info@maiefoods.com">info@maiefoods.com</a></p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 MAIE Foods. All rights reserved.</span>
+        <span>Crafted with love in India 🇮🇳</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

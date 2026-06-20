@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout — MAIE Foods</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/logo.png" />
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-bar__inner">
+      <div>
+        <a href="tel:+919303327787">+91 93033 27787</a>
+        &nbsp;·&nbsp;
+        <a href="mailto:info@maiefoods.com">info@maiefoods.com</a>
+      </div>
+      <div class="top-bar__social">
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.png" alt="MAIE Foods" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-badge cart-badge--hidden">0</span>
+        </a>
+        <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <header class="page-hero page-hero--compact">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb reveal"><a href="index.html">Home</a> / <a href="cart.html">Cart</a> / Checkout</nav>
+      <h1 class="page-hero__title reveal reveal-delay-1">Checkout</h1>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <div class="checkout-layout">
+        <form id="checkout-form" class="contact-form">
+          <h3 style="font-family:var(--font-display); font-size:1.75rem; margin-bottom:1.5rem;">Delivery Details</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="address">Delivery Address</label>
+            <textarea id="address" name="address" placeholder="Street, area, landmark..." required></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="City" required />
+            </div>
+            <div class="form-group">
+              <label for="pincode">PIN Code</label>
+              <input type="text" id="pincode" name="pincode" placeholder="461111" pattern="[0-9]{6}" required />
+            </div>
+          </div>
+
+          <h3 style="font-family:var(--font-display); font-size:1.5rem; margin:2rem 0 1rem;">Payment Method</h3>
+          <div class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="cod" checked />
+              <div>
+                <div class="payment-option__label">Cash on Delivery</div>
+                <div class="payment-option__desc">Pay when your order arrives</div>
+              </div>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="upi" />
+              <div>
+                <div class="payment-option__label">UPI</div>
+                <div class="payment-option__desc">Simulated — no real payment processed</div>
+              </div>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="card" />
+              <div>
+                <div class="payment-option__label">Credit / Debit Card</div>
+                <div class="payment-option__desc">Simulated — no real payment processed</div>
+              </div>
+            </label>
+          </div>
+          <p class="payment-notice">⚠ Payment gateway not connected yet. Orders are saved locally for demo purposes.</p>
+
+          <button type="submit" class="btn btn--primary" style="width:100%; justify-content:center; margin-top:1.5rem;">Place Order →</button>
+        </form>
+
+        <div class="cart-summary">
+          <h3>Your Order</h3>
+          <div id="checkout-items"></div>
+          <div class="summary-line" style="margin-top:1rem;"><span>Subtotal</span><span id="checkout-subtotal">₹0</span></div>
+          <div class="summary-line"><span>Shipping</span><span id="checkout-shipping">₹49</span></div>
+          <div class="summary-line summary-line--total"><span>Total</span><span id="checkout-total">₹0</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© 2026 MAIE Foods. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', initCheckout);</script>
+</body>
+</html>

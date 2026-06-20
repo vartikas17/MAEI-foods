@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes — MAIE Foods</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/logo.png" />
+</head>
+<body data-maie-layout>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/images/logo.png" alt="MAIE Foods" class="nav__logo-img" /></a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="nav__cta">Shop Now</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-badge cart-badge--hidden">0</span>
+        </a>
+        <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <header class="page-hero page-hero--compact page-hero--with-bg">
+    <div class="page-hero__bg">
+      <img src="assets/images/pasta/recipe-burrata.jpg" alt="" />
+    </div>
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb reveal"><a href="index.html">Home</a> / Recipes</nav>
+      <h1 class="page-hero__title reveal reveal-delay-1">Recipes</h1>
+      <p class="section__desc reveal reveal-delay-2">Make your meal special in minutes. Detailed, tested recipes crafted for MAIE pasta.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:3rem;">
+    <div class="container">
+      <div class="recipes-scroll" style="grid-template-columns: repeat(2, 1fr);">
+
+        <a href="recipe-spaghetti.html" class="recipe-card reveal" style="aspect-ratio:16/10;">
+          <img src="assets/images/pasta/recipe-spaghetti.jpg" alt="Spaghetti Aglio e Olio" />
+          <div class="recipe-card__content">
+            <span class="recipe-card__tag">Classic Italian</span>
+            <h3 class="recipe-card__title">Spaghetti Aglio e Olio</h3>
+            <p class="recipe-card__time">20 mins · Easy · Serves 4</p>
+          </div>
+        </a>
+
+        <a href="recipe-burrata.html" class="recipe-card reveal reveal-delay-1" style="aspect-ratio:16/10;">
+          <img src="assets/images/pasta/recipe-burrata.jpg" alt="Creamy Burrata Pasta" />
+          <div class="recipe-card__content">
+            <span class="recipe-card__tag">Indulgent</span>
+            <h3 class="recipe-card__title">Creamy Burrata Pasta</h3>
+            <p class="recipe-card__time">25 mins · Medium · Serves 3</p>
+          </div>
+        </a>
+
+        <a href="recipe-fusilli.html" class="recipe-card reveal" style="aspect-ratio:16/10;">
+          <img src="assets/images/pasta/recipe-fusilli.jpg" alt="Fusilli Primavera" />
+          <div class="recipe-card__content">
+            <span class="recipe-card__tag">Vegetarian</span>
+            <h3 class="recipe-card__title">Fusilli Primavera</h3>
+            <p class="recipe-card__time">30 mins · Easy · Serves 4</p>
+          </div>
+        </a>
+
+        <a href="recipe-penne.html" class="recipe-card reveal reveal-delay-1" style="aspect-ratio:16/10;">
+          <img src="assets/images/pasta/recipe-penne.jpg" alt="Penne Arrabbiata" />
+          <div class="recipe-card__content">
+            <span class="recipe-card__tag">Spicy</span>
+            <h3 class="recipe-card__title">Penne Arrabbiata</h3>
+            <p class="recipe-card__time">25 mins · Easy · Serves 4</p>
+          </div>
+        </a>
+
+        <a href="recipe-macaroni.html" class="recipe-card reveal" style="aspect-ratio:16/10;">
+          <img src="assets/images/pasta/recipe-macaroni.jpg" alt="Mac and Cheese" />
+          <div class="recipe-card__content">
+            <span class="recipe-card__tag">Comfort Food</span>
+            <h3 class="recipe-card__title">Classic Mac &amp; Cheese</h3>
+            <p class="recipe-card__time">35 mins · Easy · Serves 4</p>
+          </div>
+        </a>
+
+        <a href="recipe-lasagna.html" class="recipe-card reveal reveal-delay-1" style="aspect-ratio:16/10;">
+          <img src="https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=900&q=90&auto=format&fit=crop" alt="Vegetable Lasagna" />
+          <div class="recipe-card__content">
+            <span class="recipe-card__tag">Baked</span>
+            <h3 class="recipe-card__title">Vegetable Lasagna</h3>
+            <p class="recipe-card__time">60 mins · Medium · Serves 6</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">MAIE <span>FOODS</span></div>
+          <p class="footer__tagline">Premium authentic pasta crafted with care. No Maida. 100% quality ingredients for every kitchen.</p>
+        </div>
+        <div>
+          <h4 class="footer__heading">Navigate</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2026 MAIE Foods. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

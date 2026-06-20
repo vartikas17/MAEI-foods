@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spaghetti Aglio e Olio — MAIE Foods</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/logo.png" />
+</head>
+<body data-maie-layout>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo"><img src="assets/images/logo.png" alt="MAIE Foods" class="nav__logo-img" /></a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="nav__cta">Shop Now</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart" aria-label="Cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg><span class="cart-badge cart-badge--hidden">0</span></a>
+        <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <header class="page-hero page-hero--compact">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb reveal"><a href="index.html">Home</a> / <a href="recipes.html">Recipes</a> / Spaghetti Aglio e Olio</nav>
+      <h1 class="page-hero__title reveal reveal-delay-1" style="font-size:clamp(2rem,5vw,4rem);">Spaghetti Aglio e Olio</h1>
+      <p class="section__desc reveal reveal-delay-2">A Roman classic — garlic, olive oil, and chilli in perfect harmony over al dente MAIE pasta.</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <div class="recipe-detail">
+        <div class="recipe-detail__image reveal">
+          <img src="assets/images/pasta/recipe-spaghetti.jpg" alt="Spaghetti Aglio e Olio plated" />
+        </div>
+        <div class="reveal reveal-delay-1">
+          <div class="recipe-meta">
+            <div class="recipe-meta__item"><strong>Prep</strong><span>10 mins</span></div>
+            <div class="recipe-meta__item"><strong>Cook</strong><span>15 mins</span></div>
+            <div class="recipe-meta__item"><strong>Serves</strong><span>4</span></div>
+            <div class="recipe-meta__item"><strong>Difficulty</strong><span>Easy</span></div>
+          </div>
+          <div class="recipe-ingredients">
+            <h3>Ingredients</h3>
+            <ul>
+              <li><span>MAIE Vermicelli or Spaghetti</span><span>400 g</span></li>
+              <li><span>Extra virgin olive oil</span><span>80 ml (⅓ cup)</span></li>
+              <li><span>Garlic cloves, thinly sliced</span><span>8 cloves</span></li>
+              <li><span>Red chilli flakes (peperoncino)</span><span>1 tsp</span></li>
+              <li><span>Fresh flat-leaf parsley, chopped</span><span>½ cup</span></li>
+              <li><span>Sea salt</span><span>to taste</span></li>
+              <li><span>Freshly cracked black pepper</span><span>to taste</span></li>
+              <li><span>Parmigiano-Reggiano, grated (optional)</span><span>for serving</span></li>
+            </ul>
+          </div>
+          <h3 style="font-family:var(--font-display); font-size:1.5rem; margin-bottom:1rem; color:var(--maie-navy);">Method</h3>
+          <ol class="recipe-steps">
+            <li>Bring a large pot of water to a rolling boil. Add 2 tablespoons of salt — the water should taste like the sea. This is the only chance to season the pasta itself.</li>
+            <li>While the water heats, slice the garlic as thinly and evenly as possible. Uneven slices will cook at different rates and some may burn.</li>
+            <li>Add MAIE pasta to the boiling water and cook 1 minute less than the package directions for al dente texture. Before draining, reserve 1½ cups of starchy pasta water.</li>
+            <li>In a large skillet (big enough to hold all the pasta), warm olive oil over medium-low heat. Add garlic and cook slowly, stirring often, until golden and fragrant — about 3–4 minutes. Do not let it brown or turn bitter.</li>
+            <li>Add chilli flakes to the oil and stir for 30 seconds until the kitchen smells incredible. If the garlic is done before the pasta, remove the pan from heat temporarily.</li>
+            <li>Transfer drained pasta directly into the skillet. Add ½ cup pasta water and increase heat to medium. Toss vigorously with tongs for 2 minutes — the starch in the water emulsifies with the oil to create a silky coating.</li>
+            <li>Continue adding pasta water, a splash at a time, until the sauce clings to every strand. The pasta should look glossy, not oily or dry.</li>
+            <li>Remove from heat. Toss in parsley, season with salt and pepper, and serve immediately in warm bowls. Finish with grated Parmesan if desired.</li>
+          </ol>
+          <div class="recipe-tip"><strong>Chef's tip:</strong> The secret to authentic aglio e olio is low, patient heat for the garlic and aggressive tossing at the end. Never rinse the pasta after draining — the starch is essential for the sauce.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container">
+    <div class="footer__bottom" style="border:none; padding-top:0;">
+      <span>© 2026 MAIE Foods.</span>
+      <span><a href="recipes.html" style="color:var(--terracotta-light);">← All Recipes</a></span>
+    </div>
+  </div></footer>
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

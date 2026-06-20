@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Cart — MAIE Foods</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/logo.png" />
+</head>
+<body data-maie-layout>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.png" alt="MAIE Foods" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="contact.html">Contact</a>
+        <a href="products.html" class="nav__cta">Shop Now</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart active" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-badge cart-badge--hidden">0</span>
+        </a>
+        <button class="nav__burger" aria-label="Open menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </div>
+
+  <header class="page-hero page-hero--compact">
+    <div class="container page-hero__content">
+      <nav class="page-hero__breadcrumb reveal"><a href="index.html">Home</a> / Cart</nav>
+      <h1 class="page-hero__title reveal reveal-delay-1">Your Cart</h1>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:2rem;">
+    <div class="container">
+      <div id="cart-empty" class="cart-empty">
+        <h2>Your cart is empty</h2>
+        <p class="section__desc" style="margin:0 auto 2rem;">Add some delicious MAIE pasta to get started.</p>
+        <a href="products.html" class="btn btn--primary">Browse Products →</a>
+      </div>
+
+      <div class="cart-layout">
+        <div id="cart-items"></div>
+        <div id="cart-summary" class="cart-summary hidden">
+          <h3>Order Summary</h3>
+          <div class="summary-line"><span>Subtotal</span><span id="cart-subtotal">₹0</span></div>
+          <div class="summary-line"><span>Shipping</span><span id="cart-shipping">₹49</span></div>
+          <div class="summary-line summary-line--total"><span>Total</span><span id="cart-total">₹0</span></div>
+          <p style="font-size:0.75rem; color:var(--text-muted); margin:1rem 0;">Free shipping on orders above ₹500</p>
+          <a href="checkout.html" class="btn btn--primary" style="width:100%; justify-content:center; margin-top:1rem;">Proceed to Checkout →</a>
+          <a href="products.html" class="btn btn--outline" style="width:100%; justify-content:center; margin-top:0.75rem;">Continue Shopping</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© 2026 MAIE Foods. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', renderCartPage);</script>
+</body>
+</html>
+

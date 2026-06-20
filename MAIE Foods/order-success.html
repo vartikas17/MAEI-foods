@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmed — MAIE Foods</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/logo.png" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="assets/images/logo.png" alt="MAIE Foods" class="nav__logo-img" />
+      </a>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav__actions">
+        <a href="cart.html" class="nav__cart" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg>
+          <span class="cart-badge cart-badge--hidden">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="order-success reveal visible">
+        <div class="order-success__icon">✓</div>
+        <h1 class="section__title" style="margin-bottom:1rem;">Order Placed!</h1>
+        <p class="section__desc" style="margin:0 auto 2rem;">Thank you for choosing MAIE Foods. Your order has been received.</p>
+        <div id="order-details" style="background:rgba(248,245,240,0.03); border:1px solid rgba(248,245,240,0.1); border-radius:4px; padding:2rem; margin-bottom:2rem; text-align:left;"></div>
+        <a href="products.html" class="btn btn--primary">Continue Shopping →</a>
+        <a href="index.html" class="btn btn--outline" style="margin-left:1rem;">Back to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__bottom">
+        <span>© 2026 MAIE Foods. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products-data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>document.addEventListener('DOMContentLoaded', renderOrderSuccess);</script>
+</body>
+</html>
